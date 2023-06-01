@@ -81,7 +81,7 @@ that the first parameter is not a string.
 By sating thie last parameter |MultiElements| to true.
 Look down for code examples.
 
-  # ways of Implementing it
+  ### ways of Implementing it
   ```js
       1. _.Each('span', f =>{
       2.    ....
@@ -96,7 +96,7 @@ Why not have a little fun with thie new console.log() substitute
 It besically simple as used in python thie only defference wiyth python 
 is that u have add (_.) simplifies's main object core to it,
 its not much buh its cool
-  # ways of Implementing it
+  ### ways of Implementing it
   ```js
     1. // its this simple --> 
     2. _.Print(value);
@@ -124,7 +124,7 @@ to stop thie error thrown by javascript.
 
 By sating thie last parameter /type/ to true.
 Look down for code examples.
-   # ways of implimate it.
+   ### ways of implimate it.
    ```js
      0. //- here we sate the last parameter to true -->
      1. _.Event(htmlElement, 'Event type(click..etc)', ()=>{
@@ -147,7 +147,7 @@ at thie end of thie function we add a boolean(True) in
 order for Simplify.js to enable javascript to read thie 
 data thie varaible stores.
 
-  # ways of implimating it
+  ### ways of implimating it
     ```js
       0. <!-- here we sate the last parameter to true -->
       1. _.EventAll(htmlElement, 'Event type(click..etc)', ()=>{
