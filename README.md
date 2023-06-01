@@ -11,14 +11,14 @@ Project contact methrough whatsApp ....
 
 # How to use Simplify.js? and how it works?
 ## MORE NEEDS TO BE DONE
-Imagine simplify.js as a big object that has functions for properties, each fucntion has its own task,
-more like shortening thie javascript syntax.
+    Imagine simplify.js as a big object that has functions for properties, each fucntion has its own task,
+    more like shortening thie javascript syntax.
 
-What is simplify.js? | how it came to be?
-Well I was tired of thie JavaScript Syntax and how it looked, coz I have spent 5 years writing in thie same syntax, I kind of got bored by seeing one long function being repeated every time.
-So I decided to tweak the syntax a little bit, I came up with simplify.js a JavaScript library that not only changes the syntax but simplifies it instead of writing a long JavaScript function to add an event listener why not use a short function that takes in three parameters.
-Well simplify.js takes care of the boring stuff for you and helps u create organized code.
-For example: in normal JavaScript we would write:
+    What is simplify.js? | how it came to be?
+    Well I was tired of thie JavaScript Syntax and how it looked, coz I have spent 5 years writing in thie same syntax, I kind of got bored by seeing one long function being repeated every time.
+    So I decided to tweak the syntax a little bit, I came up with simplify.js a JavaScript library that not only changes the syntax but simplifies it instead of writing a long JavaScript function to add an event listener why not use a short function that takes in three parameters.
+    Well simplify.js takes care of the boring stuff for you and helps u create organized code.
+    For example: in normal JavaScript we would write:
 ```js  
 1. Document.querySelector(‘body’).addEventListener(‘load’, () => {
 2. 
@@ -26,8 +26,8 @@ For example: in normal JavaScript we would write:
 4. 
 5. });
 ```
-What the heck, imagine having 100 or more blocks of code like that flooding your code, it’s a pain right.
-simplify.js code Example: instead of writing all of that simplify breaks down thie block
+    What the heck, imagine having 100 or more blocks of code like that flooding your code, it’s a pain right.
+    simplify.js code Example: instead of writing all of that simplify breaks down thie block
 
 ```js
 1. _.Event(‘body’, ‘load’, ()=>{
