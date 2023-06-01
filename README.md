@@ -10,7 +10,7 @@ Project contact methrough whatsApp ....
  -->
 
 # How to use Simplify.js? and how it works?
-## MORE NEEDS TO BE DONE
+## MORE NEEDS TO BE DONE.
     Imagine simplify.js as a big object that has functions for properties, each fucntion has its own task,
     more like shortening thie javascript syntax.
 
