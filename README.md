@@ -157,4 +157,4 @@ data thie varaible stores.
       5. _.EventAll('htmlElement', 'Event type(click..etc)', ()=>{
       6.   code goes here .....
       7.  });
-    ```
+   ```
