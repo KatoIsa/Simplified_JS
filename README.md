@@ -9,7 +9,7 @@ If you wanna become a contributer or wnna work on sme other.
 Project contact methrough whatsApp ....
  -->
 
-# How to use Simplify.js? and how it works.
+# How to use Simplify.js ?
 ## MORE NEEDS TO BE DONE. like (error checking, more functions and more)
 Imagine simplify.js as a big object that has functions for properties, each function has its own task,
 more like shortening that javascript syntax.
@@ -148,13 +148,13 @@ order for Simplify.js to enable javascript to read thie
 data thie varaible stores.
 
   ### ways of implimating it
-    ```js
-      0. <!-- here we sate the last parameter to true -->
-      1. _.EventAll(htmlElement, 'Event type(click..etc)', ()=>{
-      2.   code goes here .....
-      3.  }, true); 
-      4.   <!--here we dont initialize thie parameter, you can sate it to false or just leave it-->
-      5. _.EventAll('htmlElement', 'Event type(click..etc)', ()=>{
-      6.   code goes here .....
-      7.  });
-   ```
+  ```js
+    0. <!-- here we sate the last parameter to true -->
+    1. _.EventAll(htmlElement, 'Event type(click..etc)', ()=>{
+    2.   code goes here .....
+    3.  }, true); 
+    4.   <!--here we dont initialize thie parameter, you can sate it to false or just leave it-->
+    5. _.EventAll('htmlElement', 'Event type(click..etc)', ()=>{
+    6.   code goes here .....
+    7.  });
+  ```
