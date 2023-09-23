@@ -9,8 +9,25 @@ If you wanna become a contributer or wnna work on sme other.
 Project contact methrough whatsApp ....
  -->
 
-# How to use Simplify.js ?
-## MORE NEEDS TO BE DONE. like (error checking, more functions and more)
+# How to add it to your basic website.
+all you need to do is add a simple script tag to your page, then javascript will do the rest.
+## HOW?
+```html
+<html>
+  <head>
+    <title>page</title>
+    <!-- add simplify.js tag here -->
+    <script src="" >
+  </head>
+  <body>
+
+  </body>
+</html>
+
+```
+### MORE NEEDS TO BE DONE. like (error checking, more functions and more)
+
+## How to use Simplify.js ?
 Imagine simplify.js as a big object that has functions for properties, each function has its own task,
 more like shortening that javascript syntax.
 
