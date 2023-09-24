@@ -1,177 +1,157 @@
-<!-- 
-I am Kato isa creator of simplify.js
-Adress: Uganda, Kampala, Sseguku/Fort.
-webste: https://katoisa256.ga.
-google: katoisa256.
-whatsApp: +256705207718.
-I mainly use whatsApp, coz its easy for me to comunicate with people.
-If you wanna become a contributer or wnna work on sme other.
-Project contact methrough whatsApp ....
- -->
+# Simplified.js Documentation
 
-# How to add it to your basic website.
-all you need to do is add a simple script tag to your page, then javascript will do the rest.
-## HOW?
+#### **Version:** 1.0.0
+#### **Author:** KATO ISA
+#### **Website:** [katoisa256.netlify.app](https://www.katoisa256.netlify.app)
+#### **Contact:** WhatsApp: +256 705207718
+
+## Introduction
+
+**Simplified.js** is a JavaScript helper library designed to simplify common tasks in web development, making your code more readable and accessible. It offers a collection of functions to streamline tasks like selecting HTML elements, adding event listeners, and basic local storage-based database management. This documentation provides an overview of the library's functions and how to use them effectively.
+
+## Table of Contents
+
+1. [Installation](#installation)
+2. [Functions](#functions)
+    - [Select](#select)
+    - [Each](#each)
+    - [Event](#event)
+    - [addClass](#addclass)
+    - [removeClass](#removeclass)
+    - [EventAll](#eventall)
+    - [HTMLcreate](#htmlcreate)
+    - [GetTAG](#gettag)
+    - [Print](#print)
+    - [DB](#db)
+        - [Create](#create)
+        - [Get](#get)
+        - [Edit](#edit)
+
+## Installation <a name="installation"></a>
+
+To use **Simplified.js** in your project, include it as a script tag in your HTML file:
+
+download the files from git hub and add them to the root directory of your website, make sure the javascript files that are going to access simplify are below it, then javascript will do its magic.
+
 ```html
-<html>
-  <head>
+ <html>
+   <head>
     <title>page</title>
-    <!-- add simplify.js tag here -->
-    <script src="" >
   </head>
   <body>
+     Random page content ...
+  <!-- add simplify.js script tag here -->
+  <script src="./lib/Simplified.js" ></script>
 
-  </body>
-</html>
+  <!--JS files that need to access simplify must be below it-->
+  <script src='./js/main.js'></script>
+  <!-- like this one here -->
 
+   </body>
+ </html>
 ```
-### MORE NEEDS TO BE DONE. like (error checking, more functions and more)
 
-## How to use Simplify.js ?
-Imagine simplify.js as a big object that has functions for properties, each function has its own task,
-more like shortening that javascript syntax.
-
-What is simplify.js? | how it came to be?
-Well, I was tired of thie JavaScript Syntax and how it looked, coz I have spent 5 years writing in thie same syntax, I kind of got bored by seeing one long function being repeated every time.
-So I decided to tweak the syntax a little bit, I came up with simplify.js a JavaScript library that not only changes the syntax but simplifies it instead of writing a long JavaScript function to add an event listener why not use a short function that takes in three parameters?
-Well, simplify.js takes care of the boring stuff for you and helps u create organized code.
-For example: in normal JavaScript, we would write:
-```js  
-1. Document.querySelector(‘body’).addEventListener(‘load’, () => {
-2. 
-3. Alert(‘this is hell’);
-4. 
-5. });
-```
-What the heck, imagine having 100 or more blocks of code like that flooding your code, it’s a pain right.
-simplify.js code Example: instead of writing all of that simplify breaks down thie block
+* YOUR NOW SATE, LOOK THROUGH THE DOC AND SEE WHAT YOU CAN DO WITH SIMPLLIFY.
+# <a name="functions">Functions</a>
+## <a name="select">Select</a>
+The Select function allows you to select HTML elements by their CSS selector. If you want to select multiple elements, set the MultiElements parameter to true.
 
 ```js
-1. _.Event(‘body’, ‘load’, ()=>{
-2. 
-3. Alert(‘simplify.js is heaven’);
-4. 
-5. });
+_.Select('element'); // Selects a single element
+_.Select('element', true); // Selects multiple elements
+
 ```
-# A number of functions u can use are all listed below...
 
-  ## The Select function: substitute to document.querySelector. <!-- document.querySelector('body') -->
-it's simple as writing ABC;
-you can save it to a variable or use it just thie way it is.
+## <a name="each">Each</a>
+The Each function is used for iterating over a collection of elements and performing a task on each element. You can pass either a string selector or a variable containing elements.
 
-It has two parameters, thie |element| and |MultiElements|
-
-|element| --- thie selscted html element.
-|MultiElements| --- Selector for multi-elements.
-
-Simplify.js looks through your code and checks each parameter.
-For the first parameter.
-|element| simplify.js will check the last parameter which is 
-a boolean to see if it has been initialized and has been sae to true
-then it will iterate through all elements in thie DOM that are in thie similar to
-thie one state in thie first parameter
-     
-     
-   ### ways of Implementing it.
 ```js
-   0. //for single elements
-   1. _.Select('body'); // u can do that
-   2. let eleemnt = _.Select('body') // or store it in a variable 
-   3. 
-   4. // For iterating through elements 
-   5. let body = _.Select('body');
-   6. _.Select(body, true); // you must state it to true if you want to select multiple elements -->
+_.Each('element', AssignedName); // Using a string selector
+_.Each(element, AssignedName, true); // Using a variable with iteration
 ```
-  ## The Each function: substitute to forEach <!-- document.querySelector('span').forEach(f =>{ ... }) -->
-It has three parameters, thie |element| and |AssignedName| and |Type|
 
-|element| --- thie selscted html element.
-|AssignedName| --- a type of data in the element parameter.
-|Type| --- type of data type stored in |element| parameter.
-Simplify.js expects to find two data Types a string or variable 
-so it checks to see if or whether the parameter is a string or variable.
+## <a name="event">Event</a>
+The Event function simplifies adding event listeners to HTML elements. You can pass an element selector, event type, task (function), and an optional Type parameter.
 
-Javascript will through an error if the parameter is not
-a string.
-In order to stop this error u need to let simplify.js know
-that the first parameter is not a string.
-By sating thie last parameter |MultiElements| to true.
-Look down for code examples.
+```js
+_.Event('.button', 'click', () => {
+    alert('hello world');
+}, true);
 
-  ### Ways of Implementing it
+```
+
+## <a name="addclass">addClass</a>
+The addClass function adds a CSS class to a DOM element.
+
+```js
+_.addClass(element, 'className');
+
+```
+
+## <a name="removeclass">removeClass</a>
+The removeClass function removes a CSS class from a DOM element.
+
+```js
+_.removeClass(element, 'className');
+
+```
+
+##  <a name="eventall">EventAll</a>
+The EventAll function is similar to Event but can be used to attach the same event handler to multiple elements.
+
+```js
+_.EventAll('.buttons', 'click', () => {
+    alert('Button clicked!');
+}, true);
+
+```
+
+##  <a name="htmlcreate">HTMLcreate</a>
+The HTMLcreate function creates a new HTML element of the specified type (e.g., 'div', 'span').
+
+```js
+let newElement = _.HTMLcreate('div');
+```
+
+## <a name="gettag">GetTAG</a>
+The GetTAG function gets elements by their HTML tag name.
+
+```js
+let elements = _.GetTAG('div');
+```
+
+## <a name="print">Print</a>
+The Print function logs a value to the console, similar to console.log.
+
+```js
+_.Print('hello world');
+```
+
+## <a name="db">DB</a>
+The DB object provides simple database management functions using localStorage.
+
+<a name="create">Create</a>
+
+  The Create function writes data to the database under the given primary key.
+
   ```js
-      1. _.Each('span', f =>{
-      2.    ....
-      3. });
-      4. // same as the last function it contains a boolean which must be sate to true if the element is not a string-->
-      5. _.Each(el, f =>{
-      6.    ....
-      7. }, true);
+  _.DB.Create('primaryKey', 'data');
   ```
-  ## The Print function: a substitute for console.log
-Why not have a little fun with thie new console.log() substitute
-It basically simple as used in Python thie only difference with python 
-is that u have to add (_.) simplifies's main object core to it,
-it's not much but its cool
-  ### Ways of Implementing it
-  ```js
-    1. // its this simple --> 
-    2. _.Print(value);
-    3. // simple right? -->
-  ```
-  ## Event function: substituting event listener
-It's kinda tricky but easy when u get ur head around thie booleans
-I mean thie True and false that appear at thie end of thie function
+<a name="get">Get</a>
 
-It has four parameters, /element/ /EventType/, /Task/, /Type/
-/element/ --- HTML element selected.
-/EventType/ -- a type of event ('click', 'load', 'scroll' etc ...);
-/Task/ -- Well this main function where all ur code goes.
-/Type/ -- boolean, with an intial value(False).
+   The Get function retrieves data from the database based on the primary key. If the Print parameter is true, it also logs the data to the console.
 
-type of data type stored in /element/ parameter.
-Simplify.js expects to find two data Types a string or variable 
-so it checks to see whether the parameter is a string or variable.
-
-Javascript will through an error if the parameter is not
-a string.
-To stop this error u need to let simplify.js know
-that the first parameter is not a string in order to simplify
-to stop the error thrown by javascript.
-
-By sating the last parameter /type/ to true.
-Could you look down for code examples?
-   ### ways of implementing it.
    ```js
-     0. //- here we state the last parameter to true -->
-     1. _.Event(htmlElement, 'Event type(click..etc)', ()=>{
-     2.   code goes here .....
-     3.  }, true); 
-     4.   //-here we don't initialize this parameter, you can state it to false or leave it-->
-     5. _.Event('htmlElement', 'Event type(click..etc)', ()=>{
-     6.  // code goes here .....
-     7.  });
-  ``` 
-  ## The EventAll function: substitute of event listener iteration
-It's not different from its sibling, Event the only difference is
-that it iterates through HTML elements.
+   _.DB.Get('primaryKey', true);
+   ```
+<a name="edit">Edit</a>
 
-If u dint get that: It selects multi-HTML elements
-As Event javascript also throws an error if the element 
-the parameter is not a string.
+  The Edit function updates data in the database under the given primary key.
 
-at the end of thie function, we add a boolean(True) in
-order for Simplify.js to enable javascript to read thie 
-data thie varaible stores.
-
-  ### ways of implimating it
   ```js
-    0. <!-- here we sate the last parameter to true -->
-    1. _.EventAll(htmlElement, 'Event type(click..etc)', ()=>{
-    2.   code goes here .....
-    3.  }, true); 
-    4.   <!--here we dont initialize thie parameter, you can sate it to false or just leave it-->
-    5. _.EventAll('htmlElement', 'Event type(click..etc)', ()=>{
-    6.   code goes here .....
-    7.  });
+  _.DB.Edit('primaryKey', 'newData');
   ```
+
+# Conclusion
+
+Simplified.js aims to simplify your JavaScript code and enhance code readability in web development projects. Feel free to use this library in your projects and customize it to suit your specific needs.
