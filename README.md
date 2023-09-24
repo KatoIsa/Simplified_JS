@@ -2,7 +2,7 @@
 
 #### **Version:** 1.0.0
 #### **Author:** KATO ISA
-#### **Website:** [katoisa256.netlify.app](https://www.katoisa256.netlify.app)
+#### **Website:** [katoisa256.netlify.app](https://simplify-js.vercel.app)
 #### **Contact:** WhatsApp: +256 705207718
 
 ## Introduction
